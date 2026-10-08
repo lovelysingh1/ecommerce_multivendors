@@ -1,0 +1,29 @@
+SHOW DATABASES;
+use multivendor_ecommerce;
+show tables;
+select * from addresses;
+select * from cart_items;
+select * from carts;
+select * from categories;
+select * from commissions;
+select * from customers;
+select * from delivery_ratings;
+select * from inventory;
+select * from order_items;
+select * from orders;
+select * from payments;
+select * from payout_logs;
+select * from product_images;
+select * from product_variants;
+select * from returns_refunds;
+select * from shipments;
+select * from users;
+select * from vendor_announcements;
+select * from vendor_payouts;
+select * from vendors;
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+-- DDL Language ( Data Defination Language )
+-- CREATE COMMAND
+-- DROP 
+-- TRUNCATE table-name
+
+SHOW DATABASES;
+
+SELECT DATABASE();
+
+SHOW TABLES;
+
+-- TRUNCATE IS USED TO REMOVE ALL ROWS OR DATA FROM A TABLE
+TRUNCATE products;
+
+DESC products;
+
+INSERT INTO products (serial) VALUES (1), (2), (3);
+INSERT INTO products (serial) VALUES (4);
+
+SELECT * FROM products;
+
+-- MODIFYING TABLES
+-- 1. ADDING COLUMNS
+
+ALTER TABLE products ADD COLUMN category VARCHAR(100);
+ALTER TABLE products ADD COLUMN category VARCHAR(100) DEFAULT 'no-category';
+
+-- 2. DROP COLUMN
+
+ALTER TABLE products DROP COLUMN price;
+
+
+-- 3. MODIFY COLUMN DATA TYPE
+ALTER TABLE products MODIFY COLUMN name VARCHAR(255);
+-- ADDING DEFAULT in COLUMN
+ALTER TABLE products MODIFY COLUMN name VARCHAR(255) DEFAULT 'no-products';
+
+
+-- 4. RENAME COLUMN
+ALTER TABLE products RENAME COLUMN name TO title;
