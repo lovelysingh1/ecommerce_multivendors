@@ -1,0 +1,58 @@
+# for vs code numpy installation = pip install numpy
+# numpy is based on arrays 1d , 2d 
+# it is use to data analysis
+
+import numpy as np # np is standard form of numpy
+
+# 1D array
+# var = np.array([34,45,67])
+# print(var)
+
+# 2D array / Matrix
+# matrix = np.array([[34,45,56,67],[1,2,3,4]])
+# print(matrix)
+
+# ex = np.array([[2,3,4],[5,6,7],[7,8,9]])
+# print(ex)
+
+# making 2d array with list
+
+# no. of elements making matrix should be same in row and column
+# list_a = [2,3,4,5]
+# list_b = [1,2,3,6]
+
+# var2 = np.array([list_a,list_b])
+# print(var2)
+
+# other functions
+# default zero value
+
+# 1D 
+# var = np.zeros(5)
+# print(var)
+
+# 2d zeros
+# zeros1 = np.zeros((2,4))
+# print(zeros1)
+
+# ones function
+# ones_1 = np.ones(3)
+# print(ones_1)
+
+# ones_2d = np.ones((4,2))
+# print(ones_2d)
+
+# full function
+# full_value = np.full(10,6)
+# print(full_value)
+
+# full_2d = np.full((2,3),100)
+# print(full_2d)
+
+# range in core python ( range(start , end , increase/decrease value))
+# range( by default start by 0 , increase by 1)
+
+# arange
+
+var = np.arange(5,10,2)
+print(var)
